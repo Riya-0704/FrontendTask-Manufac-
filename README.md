@@ -1,50 +1,77 @@
-# React + TypeScript + Vite
+# Crop Data Visualization
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project visualizes crop data using interactive charts and tables. It displays crop production, yield, and cultivation area data in a bar chart and a scrollable table. The dataset is loaded from a JSON file (`dataset.json`).
 
-Currently, two official plugins are available:
+## Project Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Follow the steps below to set up and run the project:
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Before starting, make sure you have the following installed on your system:
 
-- Configure the top-level `parserOptions` property like this:
+- [Node.js](https://nodejs.org/) (version 14 or later)
+- [npm](https://www.npmjs.com/) (npm comes with Node.js)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 1. Clone the repository
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Clone the repository to your local machine using the following command:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+2. Install dependencies
+Navigate to the project directory and install the required dependencies:
+
+cd crop-data-visualization
+npm install
+
+3. Add your dataset
+Place your dataset.json file inside the public directory of the project. This file should contain the crop data you want to visualize.
+
+4. Run the project
+Start the development server:
+npm run dev
+
+Visit http://localhost:3000 in your browser to view the application.
+
+How It Works
+The Bar Chart visualizes total crop production (in tonnes) by crop type.
+The Table displays detailed crop data, including crop name, production, yield, and area under cultivation. The table is scrollable to handle large datasets.
+
+Example Images
+1. Bar Chart Showing Crop Production
+2. Scrollable Table Showing Crop Data
+
+Technologies Used
+React - Frontend library
+ECharts - Charting library
+Mantine - UI library for React
+Vite - Development server and build tool
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+### Explanation of the Sections:
+1. **Project Title and Description**: Describes what the project is about.
+2. **Prerequisites**: Lists software requirements to run the project (Node.js and npm).
+3. **Instructions**:
+   - How to clone the repository
+   - How to install dependencies using `npm install`
+   - How to add the `dataset.json` file
+   - How to run the project using `npm run dev`
+4. **How It Works**: Describes the two main features: the Bar Chart and the Scrollable Table.
+5. **Example Images**: Shows how to include images. These images should be placed in the `images` folder within your project directory.
+6. **Folder Structure**: A guide to the file organization of the project.
+7. **Technologies Used**: Lists the main technologies used in the project (React, ECharts, Mantine, Vite).
+8. **License**: Indicates the project license type (MIT License).
+
+Output of code 
+
+
+
+This `README.md` file provides a complete guide to setting up, running, and understanding the project.
+
+
+
+
+
