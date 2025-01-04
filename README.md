@@ -68,10 +68,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 Output of code 
 
 1. Bar Chart Showing Crop Production
-![Bar Chart](./src/assets/barchart.png)
+![Bar Chart](./src/assets/Screenshot 2025-01-04 234634.png)
 
 #### 2. Scrollable Table Showing Crop Data
-![Scrollable Table](./src/assets/table.png)
+![Scrollable Table](./src/assets/Screenshot 2025-01-04 234608.png)
 
 This `README.md` file provides a complete guide to setting up, running, and understanding the project.
 
